@@ -13,4 +13,4 @@ services:
     build:
       context: ./server
     ports:
-      - "7000:7000"
+      - "2000:2000"

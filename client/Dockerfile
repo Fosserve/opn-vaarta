@@ -10,7 +10,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Serve the React app using Nginx
-FROM nginx:stable-alpine
+FROM nginx:latest
 
 COPY --from=build /app/build /usr/share/nginx/html
 

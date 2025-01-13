@@ -2,11 +2,7 @@
 node_modules/
 opnvaarta/node_modules
 opnvaarta-server/node_modules
-opnvaarta/.gitignore
-opnvaarta-server/.gitignore
-opnvaarta/.env
-opnvaarta-server/.env
-opnvaarta/dist
+
 # Logs
 npm-debug.log*
 yarn-debug.log*

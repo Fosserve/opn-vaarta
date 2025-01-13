@@ -6,11 +6,14 @@ services:
       context: ./client
     ports:
       - "3080:80"
+    environment:
+      - VITE_REACT_APP_API_URL=${VITE_REACT_APP_API_URL}
     depends_on:
       - server
 
   server:
     build:
       context: ./server
-    ports:
-      - "2000:2000"
+    environment:
+      - PORT=${PORT}
+      - MONGODB_URI=${MONGODB_URI}

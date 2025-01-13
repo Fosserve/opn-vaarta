@@ -1,8 +1,8 @@
 const express = require("express");// Import creator routes
 const cors = require("cors");
-const connectDB = require("../db/connection");
-const articleRoutes = require("../routes/articles");
-const creatorRoutes = require("../routes/creators");
+const connectDB = require("./db/connection");
+const articleRoutes = require("./routes/articles");
+const creatorRoutes = require("./routes/creators");
 const app = express();
 const PORT = process.env.PORT || 5000;
 

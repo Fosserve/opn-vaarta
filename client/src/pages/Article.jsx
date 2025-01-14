@@ -20,7 +20,7 @@ const Article = () => {
   const handleCommentSubmit = async () => {
     if (!newComment.trim()) return;
 
-    const response = await fetch(`${api_url}/${id}/comments`, {
+    const response = await fetch(`${api_url}/articles/${id}/comments`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ content: newComment }),
